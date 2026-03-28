@@ -108,11 +108,13 @@ The $E_8$ row completes the chain: the binary icosahedral symmetry group maps vi
 
 **Szemerédi is charge conservation.** Szemerédi's theorem: if $\bar{d}(A) > 0$, then $A$ contains arbitrarily long arithmetic progressions $\{t, t+d, t+2d, \ldots, t+kd\}$ for all $k$. In Noether language: if the coordination charge density is positive (coordination events arrive at positive rate), the charge is conserved in the strong sense — it cannot be avoided. Arithmetic progressions of coordination are the conserved structures guaranteed by the positive charge density.
 
-**The Furstenberg correspondence is the Noether dictionary:**
+**The Furstenberg correspondence is the Noether dictionary.** The two coordinate expressions of the same conserved charge are:
 
-$$G_{\text{coord}}^{\text{combinatorial}} = \sum_{t<s} I(a_t; a_s \mid X_{t-1}) \;\xleftrightarrow{\text{Furstenberg}}\; G_{\text{coord}}^{\text{dynamical}} = \int_X f \cdot (T^{s-t} f)\, d\mu_{\text{SRB}}$$
+$$G_{\text{coord}}^{\text{combinatorial}} = \sum_{t < s} I(a_t;\, a_s \mid X_{t-1})$$
 
-The left side is CONCERT's measurement. The right side is ORBITA's multiple correlation integral under the SRB measure. The Furstenberg correspondence is the explicit Noether dictionary: it translates between the combinatorial language (mutual information sums) and the dynamical language (correlation integrals under the invariant measure). Both compute the same conserved quantity from different coordinate systems.
+$$G_{\text{coord}}^{\text{dynamical}} = \int_{X} f \cdot \bigl(T^{s-t} f\bigr)\, d\mu_{\text{SRB}}$$
+
+The Furstenberg correspondence identifies these as equal: both compute the same conserved charge from different coordinate systems. The left side is CONCERT's combinatorial measurement; the right side is ORBITA's multiple correlation integral under the SRB measure. It translates between the combinatorial language (mutual information sums) and the dynamical language (correlation integrals under the invariant measure).
 
 **Van der Waerden as charge quantization by register.** Van der Waerden's theorem: any $r$-coloring of the integers contains a monochromatic $k$-term arithmetic progression in at least one color. In NOETHER language: the $r = 6$ FERN register "colors" partition contributions; the conserved charge (coordination progression) must become monochromatic in at least one register. Register saturation (FERN-T1) is forced when the register's monochromatic progression is established — when the coordination charge in that register is quantized. The van der Waerden number $W(k,6)$ is the milestone at which register charge quantization is guaranteed.
 
